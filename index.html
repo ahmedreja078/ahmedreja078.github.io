@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmed Reja Sk — Data Scientist & ML Engineer</title>
+  <meta name="description" content="Portfolio of Ahmed Reja Sk — Master's in Data Science & Applied Statistics. ML, Deep Learning, GenAI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Ambient background -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+  <canvas id="neural-canvas" aria-hidden="true"></canvas>
+
+  <!-- NAV -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo">AR<span class="accent">.</span>sk</a>
+      <nav class="nav__links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact" class="nav__cta">Contact</a>
+      </nav>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__eyebrow"><span class="pulse"></span> Open to Internships & Collaborations</p>
+          <h1 class="hero__title">Ahmed Reja Sk</h1>
+          <h2 class="hero__subtitle">
+            <span class="typed" id="typed"></span><span class="caret">|</span>
+          </h2>
+          <p class="hero__desc">
+            Master's student in <strong>Data Science &amp; Applied Statistics</strong> at Aliah University.
+            I build end-to-end ML pipelines — from brain-tumor segmentation with deep learning to
+            churn-prediction systems and LLM-powered assistants.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+            <a href="https://github.com/AhmedRejaSk" target="_blank" rel="noopener" class="btn btn--icon" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/ahmed-reja-sk" target="_blank" rel="noopener" class="btn btn--icon" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+          <ul class="hero__stats">
+            <li><span class="stat-num" data-count="0.967">0.967</span><span class="stat-label">Peak AUC (Brain Tumor DL)</span></li>
+            <li><span class="stat-num" data-count="541">541K+</span><span class="stat-label">Transactions Analyzed</span></li>
+            <li><span class="stat-num" data-count="0.956">0.956</span><span class="stat-label">Churn ROC-AUC</span></li>
+          </ul>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="orbit">
+            <div class="orbit__ring"></div>
+            <div class="orbit__ring orbit__ring--2"></div>
+            <div class="orbit__core">
+              <img src="myself_photo.jpeg" alt="Ahmed Reja Sk" class="orbit__photo" />
+            </div>
+            <span class="orbit__node" style="--i:0">Py</span>
+            <span class="orbit__node" style="--i:1">TF</span>
+            <span class="orbit__node" style="--i:2">LLM</span>
+            <span class="orbit__node" style="--i:3">SQL</span>
+            <span class="orbit__node" style="--i:4">R</span>
+            <span class="orbit__node" style="--i:5">C++</span>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">01.</span> About Me</h2>
+        <div class="about__grid">
+          <div class="about__text">
+            <p>
+              I'm a Data Science graduate student at <strong>Aliah University, Kolkata</strong>, currently in my 3rd semester
+              of a Master's in Data Science &amp; Applied Statistics (CGPA 7.10/10). Previously, I completed my BCA
+              from Malda College, University of Gour Banga.
+            </p>
+            <p>
+              My work sits at the intersection of <strong>deep learning, statistical validation, and applied ML systems</strong>.
+              As a Research Intern at WBNUJS Kolkata, I engineered a ResNet50-U-Net pipeline for brain-tumor segmentation —
+              handling everything from class-imbalance mitigation with Focal Tversky Loss to diagnosing unstable batch-norm
+              behaviour in a frozen encoder.
+            </p>
+            <p>
+              I care about <em>rigorous evaluation</em>: ANOVA-validated clustering, silhouette-scored segmentation,
+              and properly stratified splits — not just accuracy numbers.
+            </p>
+          </div>
+          <div class="about__cards">
+            <div class="mini-card">
+              <div class="mini-card__icon">🧠</div>
+              <h3>Deep Learning</h3>
+              <p>ResNet50-U-Net, CNNs, custom loss functions for medical imaging</p>
+            </div>
+            <div class="mini-card">
+              <div class="mini-card__icon">📊</div>
+              <h3>Classical ML</h3>
+              <p>Clustering, RFM analytics, gradient boosting, hypothesis testing</p>
+            </div>
+            <div class="mini-card">
+              <div class="mini-card__icon">🤖</div>
+              <h3>GenAI & LLMs</h3>
+              <p>Retrieval systems, prompt engineering, Databricks GenAI</p>
+            </div>
+            <div class="mini-card">
+              <div class="mini-card__icon">⚙️</div>
+              <h3>MLOps & Automation</h3>
+              <p>Flask apps, n8n pipelines, webhooks, REST APIs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">02.</span> Technical Skills</h2>
+        <div class="skills__grid">
+          <div class="skill-group">
+            <h3 class="skill-group__title">Programming Languages</h3>
+            <div class="chips">
+              <span class="chip">Python</span><span class="chip">C++</span><span class="chip">SQL</span><span class="chip">R</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Machine Learning &amp; AI</h3>
+            <div class="chips">
+              <span class="chip">Scikit-learn</span><span class="chip">TensorFlow</span><span class="chip">PyTorch</span>
+              <span class="chip">XGBoost</span><span class="chip">Regression</span><span class="chip">K-Means Clustering</span><span class="chip">LLMs</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Generative AI &amp; Cloud</h3>
+            <div class="chips">
+              <span class="chip">LLMs</span><span class="chip">Databricks for GenAI</span><span class="chip">Prompt Engineering</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Data Management &amp; Tools</h3>
+            <div class="chips">
+              <span class="chip">DBMS</span><span class="chip">NoSQL</span><span class="chip">MySQL</span>
+              <span class="chip">Tableau</span><span class="chip">Data Preprocessing</span><span class="chip">EDA</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Automation &amp; Web</h3>
+            <div class="chips">
+              <span class="chip">n8n</span><span class="chip">Flask</span><span class="chip">REST APIs</span>
+              <span class="chip">Webhooks</span><span class="chip">Linux</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Core CS &amp; Statistics</h3>
+            <div class="chips">
+              <span class="chip">DSA</span><span class="chip">Software Engineering</span><span class="chip">Git/GitHub</span>
+              <span class="chip">Hypothesis Testing</span><span class="chip">Inferential Statistics</span><span class="chip">ANOVA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">03.</span> Experience</h2>
+        <div class="timeline">
+          <article class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <div class="timeline__head">
+                <div>
+                  <h3>Research Intern — Medical Image Processing</h3>
+                  <p class="timeline__org">Data Science Unit, WBNUJS Kolkata, WB</p>
+                </div>
+                <span class="timeline__date">Jun 2024 — Present</span>
+              </div>
+              <ul>
+                <li>Engineered and trained a custom <strong>ResNet50-U-Net</strong> deep learning pipeline for lower-grade glioma (LGG) brain tumor segmentation in FLAIR MRI scans.</li>
+                <li>Processed <strong>1,800 TCGA-LGG MRI slices</strong> at 224×224 via a custom Keras Sequence generator with a stratified 70/15/15 train/val/test split.</li>
+                <li>Mitigated severe class imbalance using <strong>Focal Tversky Loss</strong> (α=0.7, β=0.3, γ=0.75) to prioritize hard-to-classify tumor regions.</li>
+                <li>Achieved peak test metrics: <strong>AUC 0.9670</strong>, Recall 0.8571, F1 0.4077, Dice 0.3851.</li>
+                <li>Stabilized volatile validation metrics by diagnosing erratic batch-normalization in the frozen pretrained encoder and enforcing inference mode during evaluation.</li>
+              </ul>
+              <div class="chips chips--sm">
+                <span class="chip">Python</span><span class="chip">TensorFlow/Keras</span><span class="chip">ResNet50</span><span class="chip">U-Net</span><span class="chip">Medical Imaging</span>
+              </div>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <div class="timeline__head">
+                <div>
+                  <h3>Placement Coordinator</h3>
+                  <p class="timeline__org">Training and Placement Cell, Aliah University Kolkata, WB</p>
+                </div>
+                <span class="timeline__date">Mar 2026 — Present</span>
+              </div>
+              <ul>
+                <li>Serve as the student representative connecting postgraduate Data Science profiles with industry partners, tech companies, and corporate recruiters.</li>
+                <li>Streamline campus hiring campaigns, organize technical mock-interviews, and coordinate skill-enhancement bootcamps for <strong>50+ prospective candidates</strong>.</li>
+                <li>Cultivate long-term academic-corporate relationships to drive campus placements, internships, and professional collaborations.</li>
+              </ul>
+              <div class="chips chips--sm">
+                <span class="chip">Leadership</span><span class="chip">Recruiting</span><span class="chip">Mentorship</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">04.</span> Featured Projects</h2>
+        <div class="projects__grid">
+          <article class="project-card">
+            <div class="project-card__top">
+              <div class="project-card__icon">📈</div>
+              <div class="project-card__links">
+                <a href="https://github.com/AhmedRejaSk" target="_blank" rel="noopener" aria-label="GitHub repo">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-card__title">E-Commerce Customer Analytics &amp; Churn Prediction</h3>
+            <ul class="project-card__points">
+              <li>Architected an end-to-end user evaluation system on a <strong>541K+ transactional</strong> UCI dataset with automated scrubbing.</li>
+              <li>Extracted RFM, AOV, and purchase-frequency features; segmented via <strong>K-Means (k=4, Silhouette 0.616)</strong>.</li>
+              <li>Validated segments with <strong>ANOVA</strong> (F = 2783.05, p &lt; 0.001); mined affinity rules with memory-optimized FP-Growth (&gt;50% confidence).</li>
+              <li>Churn models (RF, SVM, LogReg) reached <strong>ROC-AUC 0.956</strong> with 86% true churn recall.</li>
+            </ul>
+            <div class="chips chips--sm">
+              <span class="chip">Python</span><span class="chip">Scikit-learn</span><span class="chip">FP-Growth</span><span class="chip">K-Means</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__top">
+              <div class="project-card__icon">🎓</div>
+              <div class="project-card__links">
+                <a href="https://github.com/AhmedRejaSk" target="_blank" rel="noopener" aria-label="GitHub repo">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-card__title">Student Placement Prediction</h3>
+            <ul class="project-card__points">
+              <li>Built an end-to-end predictive pipeline using <strong>Random Forest &amp; XGBoost</strong> over 15+ academic &amp; demographic features.</li>
+              <li>Handled extreme class imbalance with <strong>SMOTE</strong> and refined metrics via systematic <strong>GridSearchCV</strong>.</li>
+              <li>Deployed an interactive <strong>Flask</strong> web app for real-time inference with predictive confidence margins.</li>
+            </ul>
+            <div class="chips chips--sm">
+              <span class="chip">Python</span><span class="chip">Scikit-learn</span><span class="chip">Flask</span><span class="chip">XGBoost</span><span class="chip">SMOTE</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__top">
+              <div class="project-card__icon">🗳️</div>
+              <div class="project-card__links">
+                <a href="https://github.com/AhmedRejaSk" target="_blank" rel="noopener" aria-label="GitHub repo">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-card__title">VoterGuideAI Assistant</h3>
+            <ul class="project-card__points">
+              <li>Engineered an intelligent election-education assistant for the <strong>AMD Slingshot 2026</strong> challenge.</li>
+              <li>Built optimized contextual retrieval systems with robust prompt validation and natural-language interactions.</li>
+              <li>Maintained agile documentation and version control via collaborative GitHub repositories.</li>
+            </ul>
+            <div class="chips chips--sm">
+              <span class="chip">Python</span><span class="chip">LLMs</span><span class="chip">RAG</span><span class="chip">Prompt Engineering</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__top">
+              <div class="project-card__icon">💬</div>
+              <div class="project-card__links"></div>
+            </div>
+            <h3 class="project-card__title">WhatsApp n8n Order Automation Pipeline</h3>
+            <ul class="project-card__points">
+              <li>Designed a real-time, asynchronous order automation pipeline integrating the <strong>WhatsApp Business API</strong>.</li>
+              <li>Wired robust <strong>Webhook</strong> endpoints to ingest live message metadata and log records into relational &amp; NoSQL storage tiers.</li>
+            </ul>
+            <div class="chips chips--sm">
+              <span class="chip">n8n</span><span class="chip">Webhooks</span><span class="chip">REST APIs</span><span class="chip">MySQL</span><span class="chip">NoSQL</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">05.</span> Education</h2>
+        <div class="timeline">
+          <article class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <div class="timeline__head">
+                <div>
+                  <h3>Master's in Data Science &amp; Applied Statistics</h3>
+                  <p class="timeline__org">Aliah University, Kolkata, WB</p>
+                </div>
+                <span class="timeline__date">Jul 2025 — Jul 2027 · 3rd Sem (Pursuing)</span>
+              </div>
+              <p>1st Semester CGPA: <strong class="accent">7.10 / 10.0</strong></p>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <div class="timeline__head">
+                <div>
+                  <h3>Bachelor of Computer Applications (BCA)</h3>
+                  <p class="timeline__org">Malda College (University of Gour Banga), Malda, WB</p>
+                </div>
+                <span class="timeline__date">Aug 2021 — Aug 2024</span>
+              </div>
+              <p>Overall CGPA: <strong class="accent">6.5 / 10.0</strong></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="section section--alt" id="achievements">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">06.</span> Certifications &amp; Achievements</h2>
+        <div class="achievements__grid">
+          <div class="achievement-card achievement-card--gold">
+            <span class="achievement-card__badge">🏆</span>
+            <h3>2nd Position — Secret AI Challenge</h3>
+            <p>MLAS 4.0 by IEEE JUSB</p>
+          </div>
+          <div class="achievement-card achievement-card--gold">
+            <span class="achievement-card__badge">🥇</span>
+            <h3>Model Exhibition Winner (2×)</h3>
+            <p>Smart Helmet IoT emergency notify (5s trigger) &amp; Deep Learning Attendance System using CNN face architectures — 1st place twice at Inter-Department Model Exhibition</p>
+          </div>
+          <div class="achievement-card">
+            <span class="achievement-card__badge">📜</span>
+            <h3>Certifications</h3>
+            <p>Data Science Masters (13-Month Intensive, PW Skills) · Databricks for Generative AI · AMD Slingshot 2026 Challenge Recognition</p>
+          </div>
+          <div class="achievement-card">
+            <span class="achievement-card__badge">👨‍🏫</span>
+            <h3>Technical Mentorship</h3>
+            <p>Volunteered as Technical Coding Mentor, teaching programming fundamentals &amp; problem-solving to 20+ collegiate peers</p>
+          </div>
+          <div class="achievement-card">
+            <span class="achievement-card__badge">🎤</span>
+            <h3>Research &amp; Presentation</h3>
+            <p>Certificate of Participation, Students' Research Conclave 3.0 — presented an interactive Tableau executive dashboard</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container contact__inner">
+        <h2 class="section__title"><span class="section__num">07.</span> Get In Touch</h2>
+        <p class="contact__lead">
+          Open to research collaborations, data-science internships, and full-time ML roles.
+          Feel free to reach out!
+        </p>
+        <div class="contact__grid">
+          <a class="contact__card" href="mailto:ahmedreja078@gmail.com">
+            <span class="contact__icon">✉️</span>
+            <span class="contact__label">Email</span>
+            <span class="contact__value">ahmedreja078@gmail.com</span>
+          </a>
+          <a class="contact__card" href="tel:+917431979817">
+            <span class="contact__icon">📱</span>
+            <span class="contact__label">Phone</span>
+            <span class="contact__value">+91 74319 79817</span>
+          </a>
+          <a class="contact__card" href="https://linkedin.com/in/ahmed-reja-sk" target="_blank" rel="noopener">
+            <span class="contact__icon">💼</span>
+            <span class="contact__label">LinkedIn</span>
+            <span class="contact__value">ahmed-reja-sk</span>
+          </a>
+          <a class="contact__card" href="https://github.com/AhmedRejaSk" target="_blank" rel="noopener">
+            <span class="contact__icon">🐙</span>
+            <span class="contact__label">GitHub</span>
+            <span class="contact__value">AhmedRejaSk</span>
+          </a>
+        </div>
+        <p class="contact__location">📍 Kolkata, West Bengal, India</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Designed &amp; built by <strong>Ahmed Reja Sk</strong> · © 2026</p>
+      <a href="#top" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
